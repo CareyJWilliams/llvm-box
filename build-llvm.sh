@@ -29,9 +29,8 @@ if [ ! -d $LLVM_SRC/ ]; then
     # This is the last tested commit of llvm-project.
     # Feel free to try with a newer version
     #COMMIT=d5a963ab8b40fcf7a99acd834e5f10a1a30cc2e5
-    COMMIT=bfb079f2d811626009f1a67415a02b4255f52f51
-    git reset --hard $COMMIT
-    git fetch origin $COMMIT
+    git fetch --depth 1 origin bfb079f2d811626009f1a67415a02b4255f52f51
+    git reset --hard FETCH_HEAD
 
     # The clang driver will sometimes spawn a new process to avoid memory leaks.
     # Since this complicates matters quite a lot for us, just disable that.
