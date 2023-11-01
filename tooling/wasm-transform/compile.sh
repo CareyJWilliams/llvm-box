@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e # fail if we don't find clang++ etc.
+
 SRC=$(dirname $0)
 BUILD="$1"
 
