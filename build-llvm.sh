@@ -22,7 +22,7 @@ LLVM_NATIVE=$BUILD/llvm-native
 
 # If we don't have a copy of LLVM, make one
 if [ ! -d $LLVM_SRC/ ]; then
-    git clone --depth 1 https://github.com/thegecko/llvm-project.git "$LLVM_SRC/"
+    git clone --depth 1 https://github.com/binji/llvm-project "$LLVM_SRC/"
 
     pushd $LLVM_SRC/
     
