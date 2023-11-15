@@ -2,6 +2,7 @@ FROM ghcr.io/webassembly/wasi-sdk:main
 
 RUN DEBIAN_FRONTEND=noninteractive apt --no-install-recommends -qy update && \
     DEBIAN_FRONTEND=noninteractive apt --no-install-recommends -qy install \
+    clang \
     docker.io \
     pkg-config \
     jq \

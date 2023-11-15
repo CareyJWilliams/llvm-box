@@ -7,6 +7,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt --no-install-recommends -qy update && \
     docker.io \
     pkg-config \
     ninja-build \
+    clang \
     jq \
     autoconf \
     autoconf-archive \
